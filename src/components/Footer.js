@@ -11,7 +11,7 @@ const Footer = () => {
 						<a href="https://www.facebook.com/ezoic" target="_blank" className="px-3"><i className="icon fa fa-facebook"></i></a>
 						<a href="https://twitter.com/ezoic" target="_blank" className="px-3"><i className="icon fa fa-twitter"></i></a>
 						<a href="https://www.linkedin.com/company/ezoic-inc-/" target="_blank" className="px-3"><i className="icon fa fa-linkedin"></i></a>
-						<p className="pt-4 copyright-name">Created by William Park</p>
+						<p className="pt-4 copyright-name">Ezoic App Created by William Park</p>
 					</div>
 				</div>
 			</div>
