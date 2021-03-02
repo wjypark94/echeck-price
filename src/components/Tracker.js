@@ -34,7 +34,7 @@ class Tracker extends Component {
 	 	} else if (this.state.newItem <= 2000){
 		 	price= "19.99"
 	 	}  else {
-			price = "50.99"
+			price = "29.99"
 	 	}
 	 	const newItem = {
 			id: 1 + Math.random(),
