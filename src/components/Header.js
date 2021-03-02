@@ -8,7 +8,7 @@ const Header = () => {
 		<div className="header-section">
 			<div className="container">
 				<div className="row">
-					<div className="col-12 text-center text-lg-left">
+					<div className="col-12 text-left">
 						<img className="img-fluid ezoic-icon" src={Icon} alt="Ezoic Icon"/>
 					</div>
 					<div className="col-12 py-3">
