@@ -17,32 +17,32 @@ const PriceDetails = () => {
 					<div className="col-12 col-lg-6 py-3">
 						<img className="img-fluid" src={AvatarBeginner} alt="Beginner"/>
 						<h2 className="sans-serif py-2">Beginner</h2>
-						<p>0-500 page views per month</p>
-						<p>$4.99 monthly plan</p>
+						<p className="views-text">0-500 page views per month</p>
+						<p className="price-text">$4.99 monthly plan</p>
 					</div>
 					<div className="col-12 col-lg-6 py-3">
 						<img className="img-fluid" src={AvatarStandard} alt="Standard"/>
 						<h2 className="sans-serif py-2">Standard</h2>
-						<p>501-1000 views per month</p>
-						<p>$9.99 monthly plan</p>
+						<p className="views-text">501-1000 views per month</p>
+						<p className="price-text">$9.99 monthly plan</p>
 					</div>
 					<div className="col-12 col-lg-4 py-3">
 						<img className="img-fluid" src={AvatarGold} alt="Gold"/>
 						<h2 className="sans-serif py-2">Gold</h2>
-						<p>1001-1500 views per month</p>
-						<p>$14.99 monthly plan</p>
+						<p className="views-text">1001-1500 views per month</p>
+						<p className="price-text">$14.99 monthly plan</p>
 					</div>
 					<div className="col-12 col-lg-4 py-3">
 						<img className="img-fluid" src={AvatarPlatinum} alt="Platinum"/>
 						<h2 className="sans-serif py-2">Platinum</h2>
-						<p>1501-2000 views per month</p>
-						<p>$19.99 monthly plan</p>
+						<p className="views-text">1501-2000 views per month</p>
+						<p className="price-text">$19.99 monthly plan</p>
 					</div>
 					<div className="col-12 col-lg-4 py-3">
 						<img className="img-fluid" src={AvatarVip} alt="Vip"/>
 						<h2 className="sans-serif py-2">VIP</h2>
-						<p>2001 views and above</p>
-						<p>$29.99 monthly plan</p>
+						<p className="views-text">2001 views and above</p>
+						<p className="price-text">$29.99 monthly plan</p>
 					</div>
 				</div>
 			</div>

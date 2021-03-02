@@ -3,7 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
 	return (
-		<div className="about-section">
+		<div className="about-section mt-0 mt-lg-5">
 			<div className="container py-3 py-lg-5">
 				<div className="row py-3 py-lg-5">
 					<div className="col-12">

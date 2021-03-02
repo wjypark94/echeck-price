@@ -64,7 +64,7 @@ class Tracker extends Component {
 
 	render (){
 		return (
-			<div className="tracker-section">
+			<div className="tracker-section pb-3 pb-lg-5">
 				<div className="container py-3">
 					<div className="row mx-auto row-width">
 						<div className="col-12 input-group">
