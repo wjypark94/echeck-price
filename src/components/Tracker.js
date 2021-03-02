@@ -9,7 +9,7 @@ class Tracker extends Component {
 			list: []
 		}
 	}
-	//more if you want to add localStoragae into tutorial
+	//more if you want to add localStorage
 	updateInput(key,value){
 		//update react state by calling setState again
 		this.setState({
