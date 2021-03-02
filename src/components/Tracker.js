@@ -32,11 +32,8 @@ class Tracker extends Component {
 	 	} else if (this.state.newItem <= 1500){
 			price = "14.99"
 	 	} else if (this.state.newItem <= 2000){
-		 		price= "19.99"
-	 	} else if (this.state.newItem <=3000){
-			 price = "29.99"
-		 }
-		 else {
+		 	price= "19.99"
+	 	}  else {
 			price = "50.99"
 	 	}
 	 	const newItem = {
