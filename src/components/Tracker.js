@@ -70,12 +70,13 @@ class Tracker extends Component {
 						<div className="col-12">
 							<h3>Check an Item</h3>
 						</div>
-						<div className="col-12">
+						<div className="col-12 input-group">
 							<input
 							type="number"
 							placeholder="Type item here..."
 							value={this.state.newItem}
 							onChange={e => this.updateInput("newItem", e.target.value)}
+							className="form-control"
 							/>
 							<button onClick={(e) => this.addItem(e)} className="btn btn-primary">
 								ADD 
