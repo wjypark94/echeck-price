@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../styles/Tracker.css';
 
 class Tracker extends Component {
 	constructor(props){
@@ -96,10 +97,8 @@ class Tracker extends Component {
 								})}
 							</ul>
 						</div>
-
 					</div>
 				</div>
-
 			</div>
 		)
 	}
