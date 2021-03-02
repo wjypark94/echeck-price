@@ -9,7 +9,7 @@ class Tracker extends Component {
 			list: []
 		}
 	}
-	//more if you want to add localStorage
+	//update input function from input form
 	updateInput(key,value){
 		//update react state by calling setState again
 		this.setState({
@@ -17,7 +17,7 @@ class Tracker extends Component {
 		})
 
 	}
-	//create add item
+	//create add item function
 	addItem(){
      //create new item with unique ID to identify each listen item by
 		let price = ""
