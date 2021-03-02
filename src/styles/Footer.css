@@ -1,0 +1,23 @@
+.icon {
+	width: 36px;
+    height: 36px;
+    background-color:#5fa624;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 10px;
+    color: #fff;
+}
+
+.icon:hover {
+	background-color: #fff;
+	color: black;
+}
+
+.footer-section {
+	background: url("https://ifrescuemission.org/wp-content/uploads/2018/10/footer-background.jpg");
+	background-size: cover;
+}
+
+.copyright-name {
+	 color: #fff;
+}

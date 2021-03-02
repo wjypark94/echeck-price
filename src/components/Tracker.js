@@ -34,7 +34,7 @@ class Tracker extends Component {
 	 	} else if (this.state.newItem <= 2000){
 		 		price= "19.99"
 	 	} else {
-			price = "24.99"
+			price = "29.99"
 	 	}
 	 	const newItem = {
 			id: 1 + Math.random(),
@@ -70,13 +70,13 @@ class Tracker extends Component {
 						<div className="col-12 input-group">
 							<input
 							type="number"
-							placeholder="Type item here..."
+							placeholder="Type monthly views here..."
 							value={this.state.newItem}
 							onChange={e => this.updateInput("newItem", e.target.value)}
 							className="form-control"
 							/>
 							<button onClick={(e) => this.addItem(e)} className="btn btn-primary">
-								ADD 
+								Calculate 
 							</button>
 						</div>
 					</div>

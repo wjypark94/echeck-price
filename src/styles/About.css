@@ -1,0 +1,12 @@
+.about-header {
+	font-weight: 700;
+    font-size: 36px;
+}
+
+.about-section {
+	box-shadow: 0px 2px 12px 0px rgb(0 0 0 / 30%);
+}
+
+.about-paragraph {
+	line-height: 2;
+}
