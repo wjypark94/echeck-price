@@ -3,13 +3,11 @@ import React, {Component} from 'react';
 class Tracker extends Component {
 	constructor(props){
 		super(props);
-
 		this.state = {
 			newItem: "",
 			list: []
 		}
 	}
-
 	//more if you want to add localStoragae into tutorial
 	updateInput(key,value){
 		//update react state by calling setState again
@@ -18,46 +16,37 @@ class Tracker extends Component {
 		})
 
 	}
-
 	//create add item
 	addItem(){
-     //creaate new item with unique ID to identify each listen item by
-	 console.log("hey")
+     //create new item with unique ID to identify each listen item by
+		let price = ""
+		if(this.state.newItem <= 500){
+			price = "4.99"
+	 	} else if (this.state.newItem <= 1000){
+			price = "9.99"
+	 	} else if (this.state.newItem <= 1500){
+			price = "14.99"
+	 	} else if (this.state.newItem <= 2000){
+		 		price= "19.99"
+	 	} else {
+			price = "24.99"
+	 	}
+	 	const newItem = {
+			id: 1 + Math.random(),
+		 	value: this.state.newItem.slice(),
+		 	price: price
+	 	}
+		//use spread operator to take current copy of list items
+		const list = [...this.state.list];
 
-	 let price = ""
-	 //set price depending on value
-	 if(this.state.newItem <= 500){
-		price = "4.99"
-	 } else if (this.state.newItem <= 1000){
-		price = "9.99"
-	 } else if (this.state.newItem <= 1500){
-		 price = "14.99"
-	 } else if (this.state.newItem <= 2000){
-		 price= "19.99"
-	 } else {
-		price = "24.99"
-	 }
+		//add new item to list
+		list.push(newItem);
 
-	 const newItem = {
-		 id: 1 + Math.random(),
-		 value: this.state.newItem.slice(),
-		 price: price
-	 }
-
-
-
-	 
-	 //use spread operator to take current copy of list items
-	 const list = [...this.state.list];
-
-	 //add new item to list
-	 list.push(newItem);
-
-	 //update state with new list and reset newItem input and newItem will be at initial state of two strings
-	 this.setState({
-		 list,
-		 newItem:""
-	 })
+		//update state with new list and reset newItem input and newItem will be at initial state of two strings
+		this.setState({
+			list,
+			newItem:""
+	 	})
 	}
 
 	deleteItem(id){
@@ -70,38 +59,43 @@ class Tracker extends Component {
 
 	render (){
 		return (
-			<div className="App">
-				<div>
-					Check an Item...
-					<br/>
-					<input
-					  type="number"
-					  placeholder="Type item here..."
-					  value={this.state.newItem}
-					  onChange={e => this.updateInput("newItem", e.target.value)}
-					/>
-					<button
-					  onClick={(e) => this.addItem(e)}
-					>
-					ADD 
-					</button>
-					<br/>
-	
-					<ul>
-					  {this.state.list.map(item=>{
-						  return(
-							  <li key={item.id}>
-								<span>Views:{item.value}</span>
-								<span>Price:{item.price}</span>
-								<button onClick={()=> this.deleteItem(item.id)}>
-									X
-								</button>
-							  </li>
-						  )
-					  })}
-					</ul>
-				
+			<div className="tracker-section">
+				<div className="container">
+					<div className="row">
+						<div className="col-12">
+							<h3>Check an Item</h3>
+						</div>
+						<div className="col-12">
+							<input
+							type="number"
+							placeholder="Type item here..."
+							value={this.state.newItem}
+							onChange={e => this.updateInput("newItem", e.target.value)}
+							/>
+							<button onClick={(e) => this.addItem(e)} className="btn btn-primary">
+								ADD 
+							</button>
+						</div>
+
+						<div className="col-12">
+							<ul>
+								{this.state.list.map(item=>{
+									return(
+										<li key={item.id}>
+											<span>Views:{item.value}</span>
+											<span>Price:{item.price}</span>
+											<button onClick={()=> this.deleteItem(item.id)} className="btn btn-danger">
+												X
+											</button>
+										</li>
+									)
+								})}
+							</ul>
+						</div>
+
+					</div>
 				</div>
+
 			</div>
 		)
 	}
