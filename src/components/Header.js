@@ -1,17 +1,18 @@
 import React from 'react';
 import Icon from '../images/ezoic.png'
 import '../styles/Header.css';
+import GreenCheck from '../images/green-check.png'
 
 const Header = () => {
 	return (
 		<div className="header-section">
 			<div className="container">
 				<div className="row">
-					<div className="col-12 text-left">
+					<div className="col-12 text-center text-lg-left">
 						<img className="img-fluid ezoic-icon" src={Icon} alt="Ezoic Icon"/>
 					</div>
 					<div className="col-12 py-3">
-						<h3 className="header-title sans-serif text-uppercase">E-Check</h3>
+						<h3 className="header-title sans-serif text-uppercase">E-Check<img className="img-fluid green-check pl-2" src={GreenCheck} alt="Green Check"/></h3>
 					</div>
 					<div className="col-12">
 						<p className="subheader text-uppercase sans-serif">Check your website's traffic price using Ezoic's easy search tool!</p>
