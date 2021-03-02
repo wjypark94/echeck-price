@@ -20,7 +20,11 @@ class Tracker extends Component {
 	addItem(){
      //create new item with unique ID to identify each listen item by
 		let price = ""
-		if(this.state.newItem <= 500){
+		if (!this.state.newItem){
+			alert ('Please enter a value')
+			price = "None"
+			return false;
+		} else if(this.state.newItem <= 500){
 			price = "4.99"
 	 	} else if (this.state.newItem <= 1000){
 			price = "9.99"
@@ -77,16 +81,16 @@ class Tracker extends Component {
 							</button>
 						</div>
 
-						<div className="col-12">
+						<div className="col-12 pt-5">
 							<ul>
 								{this.state.list.map(item=>{
 									return(
-										<li key={item.id}>
-											<span>Views:{item.value}</span>
-											<span>Price:{item.price}</span>
-											<button onClick={()=> this.deleteItem(item.id)} className="btn btn-danger">
-												X
-											</button>
+										<li key={item.id} className="py-3">
+											<div className="row">
+												<div className="col-4 d-flex justify-content-center align-items-center">Views: {item.value}</div>
+												<div className="col-4 d-flex justify-content-center align-items-center">Price: ${item.price}</div>
+												<div className="col-4"><button onClick={()=> this.deleteItem(item.id)} className="btn btn-danger">X</button></div>
+											</div>
 										</li>
 									)
 								})}
