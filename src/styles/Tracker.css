@@ -1,3 +1,7 @@
 ul {
 	list-style-type: none;
 }
+
+.row-width {
+	max-width: 800px;
+}

@@ -65,11 +65,8 @@ class Tracker extends Component {
 	render (){
 		return (
 			<div className="tracker-section">
-				<div className="container">
-					<div className="row">
-						<div className="col-12">
-							<h3>Check an Item</h3>
-						</div>
+				<div className="container py-3">
+					<div className="row mx-auto row-width">
 						<div className="col-12 input-group">
 							<input
 							type="number"
@@ -82,15 +79,16 @@ class Tracker extends Component {
 								ADD 
 							</button>
 						</div>
-
+					</div>
+					<div className="row row-width mx-auto">
 						<div className="col-12 pt-5">
 							<ul>
 								{this.state.list.map(item=>{
 									return(
 										<li key={item.id} className="py-3">
 											<div className="row">
-												<div className="col-4 d-flex justify-content-center align-items-center">Views: {item.value}</div>
-												<div className="col-4 d-flex justify-content-center align-items-center">Price: ${item.price}</div>
+												<div className="col-4 d-flex justify-content-center align-items-center">Monthly Views: {item.value}</div>
+												<div className="col-4 d-flex justify-content-center align-items-center">Monthly Price: ${item.price}</div>
 												<div className="col-4"><button onClick={()=> this.deleteItem(item.id)} className="btn btn-danger">X</button></div>
 											</div>
 										</li>
