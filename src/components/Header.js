@@ -11,7 +11,7 @@ const Header = () => {
 						<img className="img-fluid ezoic-icon" src={Icon} alt="Ezoic Icon"/>
 					</div>
 					<div className="col-12 py-3">
-						<h3 className="header-title sans-serif">E-CHECK</h3>
+						<h3 className="header-title sans-serif text-uppercase">E-Check</h3>
 					</div>
 					<div className="col-12">
 						<p className="subheader text-uppercase sans-serif">Check your website's traffic price using Ezoic's easy search tool!</p>
